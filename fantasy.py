@@ -4,9 +4,10 @@ from pprint import pprint
 import matplotlib.pyplot as plt
 from teamID import teamID
 
+
 # FUNCTIONS
 ''' limit is the lower bound of transfers in - transfers out '''
-def plot_transfers(limit):
+def plot_transfers(limit: int) -> None:
     myList = {}
     plt.xlabel("Players");
     plt.ylabel("Number of Transfer Out")
@@ -19,21 +20,21 @@ def plot_transfers(limit):
     plt.show()
 
 ''' loading dataset from url '''
-def load_dataset(name,url_addr):
+def load_dataset(name: str,url_addr: str) -> None:
     with urllib.request.urlopen(url_addr) as url:
         data = json.loads(url.read().decode())
     datasets[name] = data
 
 ''' input: id
 return value: team name '''
-def find_team_from_id(id):
+def find_team_from_id(id: int) -> str:
     for i in datasets["teams"]:
         if i["id"] == id:
             return i["name"]
 
 ''' Generating a CSV file from a list
 input: list of strings, name of file '''
-def export_to_CSV(list,filename):
+def export_to_CSV(list:list,filename:str) -> None:
     if list is None:
         print("[ERROR: export_to_CSV()]\n => List cannot be empty]")
         return None
@@ -44,7 +45,7 @@ def export_to_CSV(list,filename):
     
 ''' input argument: name of team
 return: id of team (or None if team doesn't exist)'''
-def getID(team_name):
+def getID(team_name: str) -> int:
     for i in datasets["teams"]:
         if i["name"] == team_name:
             return i["id"]
@@ -53,21 +54,21 @@ def getID(team_name):
 
 ''' input argument: team id
 return: name of team (or None)'''
-def getName(team_id):
+def getName(team_id:int) -> str:
     for i in datasets["teams"]:
         if i["id"] == team_id:
             return i["name"]
     print("[ERROR : getName()]\n => ID is not valid") 
     return None
 
-def getTeamObj(team_id):
+def getTeamObj(team_id: int) -> dict:
     for i in datasets["teams"]:
         if i["id"] == team_id:
             return i;
     print("[ERROR : getTeamObj()]\n => ID is not valid") 
     return None
 
-def getCurrentFixtures():
+def getCurrentFixtures() -> list:
     tmp_data = []
     for i in datasets["bootstrap-static"]["next_event_fixtures"]:
         home = i["team_h"]
@@ -75,7 +76,7 @@ def getCurrentFixtures():
         tmp_data.append(getName(home)+","+getName(away)+","+str(getTeamObj(home)["strength"]-getTeamObj(away)["strength"]))
     return tmp_data
 
-def getAllFixtures():
+def getAllFixtures() -> list:
     tmp_list = []
     header = "Gameweek,Time,Home,Away"
     tmp_list.append(header)
@@ -91,7 +92,7 @@ def getAllFixtures():
 
 ''' returns a defensive ranking list
 key_name must be in allowed ''' 
-def getSortedStrength(key_name):
+def getSortedStrength(key_name) -> list:
     allowed = ["strength_overall_home", "strength_overall_away", "strength_attack_home","strength_attack_away", "strength_defence_home", "strength_defence_away","strength"]
     if key_name not in allowed:
         print("[ERROR : Invalid key_name from getSortedStrength()]\n"," => Allowed key_names are:"+str(allowed))
@@ -111,7 +112,7 @@ def getSortedStrength(key_name):
 
 ''' returns a list of stats for the next game 
 input: one of the teams '''
-def getNextInfo(home):
+def getNextInfo(home: int) -> list:
     if home is None:
         print("[ERROR : getNextInfo()]\n => ID is None")
     away = getTeamObj(home["next_event_fixture"][0]["opponent"])
@@ -135,7 +136,7 @@ def getNextInfo(home):
     return tmp_list
 
 ''' returns a list containing player objects from current team '''
-def getPlayers(team_id):
+def getPlayers(team_id: int) -> list:
     players = []
     for i in datasets["elements"]:
         if i["team"] == team_id:
@@ -143,14 +144,14 @@ def getPlayers(team_id):
     return players
 
 ''' returns player object '''
-def getPlayer(player_id):
+def getPlayer(player_id: int) -> dict:
     for i in datasets["elements"]:
         if i["id"] == player_id:
             return i
     return None;
 
 ''' print players' id, first name, last name to screen '''
-def showPlayers(team_id):
+def showPlayers(team_id: int) -> None:
     players = getPlayers(team_id)
     width=20
     print("ID".ljust(5)+"Second Name".ljust(width)+"First Name".ljust(width))
@@ -158,7 +159,7 @@ def showPlayers(team_id):
         print(str(i["id"]).ljust(5)+i["second_name"].ljust(width)+i["first_name"].ljust(width))
 
 ''' returns a list of player details '''
-def getPlayerDetails(player_id):
+def getPlayerDetails(player_id: int) -> list:
     player = getPlayer(player_id)
     tmp_list = []
     for i in player.keys():
@@ -166,7 +167,7 @@ def getPlayerDetails(player_id):
     return tmp_list
 
 ''' returns a string containing second+first name '''
-def getPlayerName(player_id):
+def getPlayerName(player_id: int) -> str:
     for i in datasets["elements"]:
         if i["id"] == player_id:
             return i["second_name"]+"_"+i["first_name"]
