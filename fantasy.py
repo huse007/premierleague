@@ -31,18 +31,6 @@ def find_team_from_id(id):
         if i["id"] == id:
             return i["name"]
 
-''' Printing next opponent to file 
-tw: left ajust width '''
-def print_next_games_to_csv():
-    tw = 15 
-    with open('output.csv', mode='w') as outputfile:
-              output_writer = csv.writer(outputfile,delimiter=',',quotechar='"', quoting=csv.QUOTE_MINIMAL)
-              ''' Print header '''
-              output_writer.writerow(["ID".ljust(tw), "STRENGTH".ljust(tw), "NAME".ljust(tw), "OPPONENT".ljust(tw)])
-              for i in datasets["teams"]:
-                      '''Print row '''
-                      output_writer.writerow([str(i["id"]).ljust(tw), str(i["strength"]).ljust(tw), i["name"].ljust(tw), find_team_from_id(i["next_event_fixture"][0]["opponent"]).ljust(tw)])
-
 ''' Generating a CSV file from a list
 input: list of strings, name of file '''
 def export_to_CSV(list,filename):
