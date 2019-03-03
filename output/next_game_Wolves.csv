@@ -1,0 +1,12 @@
+,Home,Away
+id,6,20
+name,Chelsea,Wolves
+short_name,CHE,WOL
+strength,4,3
+strength_overall_home,1260,1130
+strength_overall_away,1310,1130
+strength_attack_home,1270,1180
+strength_attack_away,1340,1200
+strength_defence_home,1320,1080
+strength_defence_away,1330,1100
+next_event_fixture_is_home,True,False

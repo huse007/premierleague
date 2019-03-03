@@ -1,0 +1,12 @@
+,Home,Away
+id,16,17
+name,Southampton,Spurs
+short_name,SOU,TOT
+strength,2,5
+strength_overall_home,1050,1330
+strength_overall_away,1060,1330
+strength_attack_home,1040,1270
+strength_attack_away,1070,1340
+strength_defence_home,1100,1320
+strength_defence_away,1100,1340
+next_event_fixture_is_home,True,False

@@ -1,0 +1,12 @@
+,Home,Away
+id,11,9
+name,Leicester,Fulham
+short_name,LEI,FUL
+strength,3,2
+strength_overall_home,1110,1000
+strength_overall_away,1110,1000
+strength_attack_home,1130,1000
+strength_attack_away,1180,1030
+strength_defence_home,1080,1000
+strength_defence_away,1140,1080
+next_event_fixture_is_home,True,False

@@ -1,0 +1,12 @@
+,Home,Away
+id,5,19
+name,Cardiff,West Ham
+short_name,CAR,WHU
+strength,2,3
+strength_overall_home,1030,1100
+strength_overall_away,1080,1100
+strength_attack_home,1030,1090
+strength_attack_away,1060,1100
+strength_defence_home,1020,1120
+strength_defence_away,1090,1150
+next_event_fixture_is_home,True,False
