@@ -1,0 +1,12 @@
+Property,Home,Away
+id,10,2
+name,Huddersfield,Bournemouth
+short_name,HUD,BOU
+strength,2,3
+strength_overall_home,1010,1030
+strength_overall_away,1020,1030
+strength_attack_home,1030,1040
+strength_attack_away,1060,1100
+strength_defence_home,990,1120
+strength_defence_away,1010,1130
+next_event_fixture_is_home,True,False

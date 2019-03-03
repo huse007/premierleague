@@ -11,14 +11,14 @@ export_to_CSV(getSortedStrength("strength_defence_home"),"strength_defence_home.
 export_to_CSV(getSortedStrength("strength_defence_away"),"strength_defence_away.csv")
 export_to_CSV(getSortedStrength("strength"),"strength.csv")
 #export_to_CSV(getNextInfo(getTeamObj(getID("Arsenal")),"next_info.csv")
+
 for i in datasets["teams"]:
-    export_to_CSV(getNextInfo(i),"next_game_"+i["name"]+".csv")
-'''
+    export_to_CSV(getNextInfo(i),"teams/next_game_"+i["name"]+".csv")
+
 #pprint(datasets)
 #pprint(getPlayers(1))
 
 #showPlayers(1)
-'''
 for i in datasets["elements"]:
     export_to_CSV(getPlayerDetails(i["id"]),"players/"+getPlayerName(i["id"])+".csv")
 '''
