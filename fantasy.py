@@ -143,7 +143,45 @@ def getNextInfo(home):
     tmp_list.append("strength_defence_home,"+str(home["strength_defence_home"])+","+str(away["strength_defence_home"]))
     tmp_list.append("strength_defence_away,"+str(home["strength_defence_away"])+","+str(away["strength_defence_away"]))
     tmp_list.append("next_event_fixture_is_home,"+str(home["next_event_fixture"][0]["is_home"])+","+str(away["next_event_fixture"][0]["is_home"]))
-    return tmp_list    
+    return tmp_list
+
+''' returns a list containing player objects from current team '''
+def getPlayers(team_id):
+    players = []
+    for i in datasets["elements"]:
+        if i["team"] == team_id:
+            players.append(i)
+    return players
+
+''' returns player object '''
+def getPlayer(player_id):
+    for i in datasets["elements"]:
+        if i["id"] == player_id:
+            return i
+    return None;
+
+''' print players' id, first name, last name to screen '''
+def showPlayers(team_id):
+    players = getPlayers(team_id)
+    width=20
+    print("ID".ljust(5)+"Second Name".ljust(width)+"First Name".ljust(width))
+    for i in players:
+        print(str(i["id"]).ljust(5)+i["second_name"].ljust(width)+i["first_name"].ljust(width))
+
+''' returns a list of player details '''
+def getPlayerDetails(player_id):
+    player = getPlayer(player_id)
+    tmp_list = []
+    for i in player.keys():
+        tmp_list.append(str(i)+","+str(player[i]))
+    return tmp_list
+
+''' returns a string containing second+first name '''
+def getPlayerName(player_id):
+    for i in datasets["elements"]:
+        if i["id"] == player_id:
+            return i["second_name"]+"_"+i["first_name"]
+    return None
 
 # VARIABLES                      
 ''' URL path '''
@@ -161,5 +199,5 @@ load_dataset("fixtures", path+"fixtures")
 load_dataset("teams", path+"teams")
 load_dataset("region", path+"region")
 load_dataset("bootstrap-static", path+"bootstrap-static")
-
+load_dataset("elements",path+"elements")
 
