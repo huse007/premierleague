@@ -131,7 +131,7 @@ def getNextInfo(home):
         away = home
         home = new_home
     tmp_list = []
-    tmp_list.append(","+"Home"+","+"Away")
+    tmp_list.append("Property,Home,Away")
     tmp_list.append("id,"+str(home["id"])+","+str(away["id"]))
     tmp_list.append("name,"+home["name"]+","+away["name"])
     tmp_list.append("short_name,"+home["short_name"]+","+away["short_name"])
