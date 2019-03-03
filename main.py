@@ -3,7 +3,9 @@ from fantasy import *
 '''
 # EXAMPLES
 export_to_CSV(getCurrentFixtures(),"fixtures/current_fixtures.csv")
+'''
 export_to_CSV(getAllFixtures(),"fixtures/all_fixtures.csv")
+'''
 export_to_CSV(getSortedStrength("strength_overall_home"),"stats/strength_overall_home.csv")
 export_to_CSV(getSortedStrength("strength_overall_away"),"stats/strength_overall_away.csv")
 export_to_CSV(getSortedStrength("strength_attack_home"),"stats/strength_attack_home.csv")
@@ -23,3 +25,4 @@ for i in datasets["teams"]:
 for i in datasets["elements"]:
     export_to_CSV(getPlayerDetails(i["id"]),"players/"+getPlayerName(i["id"])+".csv")
 '''
+

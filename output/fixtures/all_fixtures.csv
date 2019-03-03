@@ -1,381 +1,381 @@
-Time,Home,Away
-Unknown,Brighton,Cardiff
-Unknown,Chelsea,Brighton
-Unknown,Spurs,Crystal Palace
-Unknown,Watford,Southampton
-Unknown,Wolves,Arsenal
-10 Aug 20:00,Man Utd,Leicester
-11 Aug 12:30,Newcastle,Spurs
-11 Aug 15:00,Bournemouth,Cardiff
-11 Aug 15:00,Fulham,Crystal Palace
-11 Aug 15:00,Huddersfield,Chelsea
-11 Aug 15:00,Watford,Brighton
-11 Aug 17:30,Wolves,Everton
-12 Aug 13:30,Liverpool,West Ham
-12 Aug 13:30,Southampton,Burnley
-12 Aug 16:00,Arsenal,Man City
-18 Aug 12:30,Cardiff,Newcastle
-18 Aug 15:00,Everton,Southampton
-18 Aug 15:00,Leicester,Wolves
-18 Aug 15:00,Spurs,Fulham
-18 Aug 15:00,West Ham,Bournemouth
-18 Aug 17:30,Chelsea,Arsenal
-19 Aug 13:30,Burnley,Watford
-19 Aug 13:30,Man City,Huddersfield
-19 Aug 16:00,Brighton,Man Utd
-20 Aug 20:00,Crystal Palace,Liverpool
-25 Aug 12:30,Wolves,Man City
-25 Aug 15:00,Arsenal,West Ham
-25 Aug 15:00,Bournemouth,Everton
-25 Aug 15:00,Huddersfield,Cardiff
-25 Aug 15:00,Southampton,Leicester
-25 Aug 17:30,Liverpool,Brighton
-26 Aug 13:30,Watford,Crystal Palace
-26 Aug 16:00,Fulham,Burnley
-26 Aug 16:00,Newcastle,Chelsea
-27 Aug 20:00,Man Utd,Spurs
-01 Sep 12:30,Leicester,Liverpool
-01 Sep 15:00,Brighton,Fulham
-01 Sep 15:00,Chelsea,Bournemouth
-01 Sep 15:00,Crystal Palace,Southampton
-01 Sep 15:00,Everton,Huddersfield
-01 Sep 15:00,West Ham,Wolves
-01 Sep 17:30,Man City,Newcastle
-02 Sep 13:30,Cardiff,Arsenal
-02 Sep 16:00,Burnley,Man Utd
-02 Sep 16:00,Watford,Spurs
-15 Sep 12:30,Spurs,Liverpool
-15 Sep 15:00,Bournemouth,Leicester
-15 Sep 15:00,Chelsea,Cardiff
-15 Sep 15:00,Huddersfield,Crystal Palace
-15 Sep 15:00,Man City,Fulham
-15 Sep 15:00,Newcastle,Arsenal
-15 Sep 17:30,Watford,Man Utd
-16 Sep 13:30,Wolves,Burnley
-16 Sep 16:00,Everton,West Ham
-17 Sep 20:00,Southampton,Brighton
-22 Sep 12:30,Fulham,Watford
-22 Sep 15:00,Burnley,Bournemouth
-22 Sep 15:00,Cardiff,Man City
-22 Sep 15:00,Crystal Palace,Newcastle
-22 Sep 15:00,Leicester,Huddersfield
-22 Sep 15:00,Liverpool,Southampton
-22 Sep 15:00,Man Utd,Wolves
-22 Sep 17:30,Brighton,Spurs
-23 Sep 13:30,West Ham,Chelsea
-23 Sep 16:00,Arsenal,Everton
-29 Sep 12:30,West Ham,Man Utd
-29 Sep 15:00,Arsenal,Watford
-29 Sep 15:00,Everton,Fulham
-29 Sep 15:00,Huddersfield,Spurs
-29 Sep 15:00,Man City,Brighton
-29 Sep 15:00,Newcastle,Leicester
-29 Sep 15:00,Wolves,Southampton
-29 Sep 17:30,Chelsea,Liverpool
-30 Sep 16:00,Cardiff,Burnley
-01 Oct 20:00,Bournemouth,Crystal Palace
-05 Oct 20:00,Brighton,West Ham
-06 Oct 15:00,Burnley,Huddersfield
-06 Oct 15:00,Crystal Palace,Wolves
-06 Oct 15:00,Leicester,Everton
-06 Oct 15:00,Spurs,Cardiff
-06 Oct 15:00,Watford,Bournemouth
-06 Oct 17:30,Man Utd,Newcastle
-07 Oct 12:00,Fulham,Arsenal
-07 Oct 14:15,Southampton,Chelsea
-07 Oct 16:30,Liverpool,Man City
-20 Oct 12:30,Chelsea,Man Utd
-20 Oct 15:00,Bournemouth,Southampton
-20 Oct 15:00,Cardiff,Fulham
-20 Oct 15:00,Man City,Burnley
-20 Oct 15:00,Newcastle,Brighton
-20 Oct 15:00,West Ham,Spurs
-20 Oct 15:00,Wolves,Watford
-20 Oct 17:30,Huddersfield,Liverpool
-21 Oct 16:00,Everton,Crystal Palace
-22 Oct 20:00,Arsenal,Leicester
-27 Oct 15:00,Brighton,Wolves
-27 Oct 15:00,Fulham,Bournemouth
-27 Oct 15:00,Liverpool,Cardiff
-27 Oct 15:00,Southampton,Newcastle
-27 Oct 15:00,Watford,Huddersfield
-27 Oct 17:30,Leicester,West Ham
-28 Oct 13:30,Burnley,Chelsea
-28 Oct 13:30,Crystal Palace,Arsenal
-28 Oct 16:00,Man Utd,Everton
-29 Oct 20:00,Spurs,Man City
-03 Nov 12:30,Bournemouth,Man Utd
-03 Nov 15:00,Cardiff,Leicester
-03 Nov 15:00,Everton,Brighton
-03 Nov 15:00,Newcastle,Watford
-03 Nov 15:00,West Ham,Burnley
-03 Nov 17:30,Arsenal,Liverpool
-03 Nov 19:45,Wolves,Spurs
-04 Nov 15:00,Man City,Southampton
-04 Nov 16:00,Chelsea,Crystal Palace
-05 Nov 20:00,Huddersfield,Fulham
-10 Nov 12:30,Cardiff,Brighton
-10 Nov 15:00,Huddersfield,West Ham
-10 Nov 15:00,Leicester,Burnley
-10 Nov 15:00,Newcastle,Bournemouth
-10 Nov 15:00,Southampton,Watford
-10 Nov 17:30,Crystal Palace,Spurs
-11 Nov 12:00,Liverpool,Fulham
-11 Nov 14:15,Chelsea,Everton
-11 Nov 16:30,Arsenal,Wolves
-11 Nov 16:30,Man City,Man Utd
-24 Nov 15:00,Brighton,Leicester
-24 Nov 15:00,Everton,Cardiff
-24 Nov 15:00,Fulham,Southampton
-24 Nov 15:00,Man Utd,Crystal Palace
-24 Nov 15:00,Watford,Liverpool
-24 Nov 15:00,West Ham,Man City
-24 Nov 17:30,Spurs,Chelsea
-25 Nov 13:30,Bournemouth,Arsenal
-25 Nov 16:00,Wolves,Huddersfield
-26 Nov 20:30,Burnley,Newcastle
-30 Nov 20:00,Cardiff,Wolves
-01 Dec 15:00,Crystal Palace,Burnley
-01 Dec 15:00,Huddersfield,Brighton
-01 Dec 15:00,Leicester,Watford
-01 Dec 15:00,Man City,Bournemouth
-01 Dec 15:00,Newcastle,West Ham
-01 Dec 17:30,Southampton,Man Utd
-02 Dec 12:00,Chelsea,Fulham
-02 Dec 14:05,Arsenal,Spurs
-02 Dec 16:15,Liverpool,Everton
-04 Dec 19:45,Bournemouth,Huddersfield
-04 Dec 19:45,Brighton,Crystal Palace
-04 Dec 19:45,West Ham,Cardiff
-04 Dec 20:00,Watford,Man City
-05 Dec 19:45,Burnley,Liverpool
-05 Dec 19:45,Everton,Newcastle
-05 Dec 19:45,Fulham,Leicester
-05 Dec 19:45,Wolves,Chelsea
-05 Dec 20:00,Man Utd,Arsenal
-05 Dec 20:00,Spurs,Southampton
-08 Dec 12:30,Bournemouth,Liverpool
-08 Dec 15:00,Arsenal,Huddersfield
-08 Dec 15:00,Burnley,Brighton
-08 Dec 15:00,Cardiff,Southampton
-08 Dec 15:00,Man Utd,Fulham
-08 Dec 15:00,West Ham,Crystal Palace
-08 Dec 17:30,Chelsea,Man City
-08 Dec 19:45,Leicester,Spurs
-09 Dec 16:00,Newcastle,Wolves
-10 Dec 20:00,Everton,Watford
-15 Dec 12:30,Man City,Everton
-15 Dec 15:00,Crystal Palace,Leicester
-15 Dec 15:00,Huddersfield,Newcastle
-15 Dec 15:00,Spurs,Burnley
-15 Dec 15:00,Watford,Cardiff
-15 Dec 15:00,Wolves,Bournemouth
-15 Dec 17:30,Fulham,West Ham
-16 Dec 13:30,Brighton,Chelsea
-16 Dec 13:30,Southampton,Arsenal
-16 Dec 16:00,Liverpool,Man Utd
-21 Dec 20:00,Wolves,Liverpool
-22 Dec 12:30,Arsenal,Burnley
-22 Dec 15:00,Bournemouth,Brighton
-22 Dec 15:00,Chelsea,Leicester
-22 Dec 15:00,Huddersfield,Southampton
-22 Dec 15:00,Man City,Crystal Palace
-22 Dec 15:00,Newcastle,Fulham
-22 Dec 15:00,West Ham,Watford
-22 Dec 17:30,Cardiff,Man Utd
-23 Dec 16:00,Everton,Spurs
-26 Dec 12:30,Fulham,Wolves
-26 Dec 15:00,Burnley,Everton
-26 Dec 15:00,Crystal Palace,Cardiff
-26 Dec 15:00,Leicester,Man City
-26 Dec 15:00,Liverpool,Newcastle
-26 Dec 15:00,Man Utd,Huddersfield
-26 Dec 15:00,Spurs,Bournemouth
-26 Dec 17:15,Brighton,Arsenal
-26 Dec 19:30,Watford,Chelsea
-27 Dec 19:45,Southampton,West Ham
-29 Dec 15:00,Brighton,Everton
-29 Dec 15:00,Fulham,Huddersfield
-29 Dec 15:00,Leicester,Cardiff
-29 Dec 15:00,Spurs,Wolves
-29 Dec 15:00,Watford,Newcastle
-29 Dec 17:30,Liverpool,Arsenal
-30 Dec 12:00,Crystal Palace,Chelsea
-30 Dec 14:15,Burnley,West Ham
-30 Dec 14:15,Southampton,Man City
-30 Dec 16:30,Man Utd,Bournemouth
-01 Jan 12:30,Everton,Leicester
-01 Jan 15:00,Arsenal,Fulham
-01 Jan 17:30,Cardiff,Spurs
-02 Jan 19:45,Bournemouth,Watford
-02 Jan 19:45,Chelsea,Southampton
-02 Jan 19:45,Huddersfield,Burnley
-02 Jan 19:45,West Ham,Brighton
-02 Jan 19:45,Wolves,Crystal Palace
-02 Jan 20:00,Newcastle,Man Utd
-03 Jan 20:00,Man City,Liverpool
-12 Jan 12:30,West Ham,Arsenal
-12 Jan 15:00,Brighton,Liverpool
-12 Jan 15:00,Burnley,Fulham
-12 Jan 15:00,Cardiff,Huddersfield
-12 Jan 15:00,Crystal Palace,Watford
-12 Jan 15:00,Leicester,Southampton
-12 Jan 17:30,Chelsea,Newcastle
-13 Jan 14:15,Everton,Bournemouth
-13 Jan 16:30,Spurs,Man Utd
-14 Jan 20:00,Man City,Wolves
-19 Jan 12:30,Wolves,Leicester
-19 Jan 15:00,Bournemouth,West Ham
-19 Jan 15:00,Liverpool,Crystal Palace
-19 Jan 15:00,Man Utd,Brighton
-19 Jan 15:00,Newcastle,Cardiff
-19 Jan 15:00,Southampton,Everton
-19 Jan 15:00,Watford,Burnley
-19 Jan 17:30,Arsenal,Chelsea
-20 Jan 13:30,Huddersfield,Man City
-20 Jan 16:00,Fulham,Spurs
-29 Jan 19:45,Arsenal,Cardiff
-29 Jan 19:45,Fulham,Brighton
-29 Jan 19:45,Huddersfield,Everton
-29 Jan 19:45,Wolves,West Ham
-29 Jan 20:00,Man Utd,Burnley
-29 Jan 20:00,Newcastle,Man City
-30 Jan 19:45,Bournemouth,Chelsea
-30 Jan 19:45,Southampton,Crystal Palace
-30 Jan 20:00,Liverpool,Leicester
-30 Jan 20:00,Spurs,Watford
-02 Feb 12:30,Spurs,Newcastle
-02 Feb 15:00,Brighton,Watford
-02 Feb 15:00,Burnley,Southampton
-02 Feb 15:00,Chelsea,Huddersfield
-02 Feb 15:00,Crystal Palace,Fulham
-02 Feb 15:00,Everton,Wolves
-02 Feb 17:30,Cardiff,Bournemouth
-03 Feb 14:05,Leicester,Man Utd
-03 Feb 16:30,Man City,Arsenal
-04 Feb 20:00,West Ham,Liverpool
-06 Feb 19:45,Everton,Man City
-09 Feb 12:30,Fulham,Man Utd
-09 Feb 15:00,Crystal Palace,West Ham
-09 Feb 15:00,Huddersfield,Arsenal
-09 Feb 15:00,Liverpool,Bournemouth
-09 Feb 15:00,Southampton,Cardiff
-09 Feb 15:00,Watford,Everton
-09 Feb 17:30,Brighton,Burnley
-10 Feb 13:30,Spurs,Leicester
-10 Feb 16:00,Man City,Chelsea
-11 Feb 20:00,Wolves,Newcastle
-22 Feb 19:45,Cardiff,Watford
-22 Feb 19:45,West Ham,Fulham
-23 Feb 12:30,Burnley,Spurs
-23 Feb 15:00,Bournemouth,Wolves
-23 Feb 15:00,Newcastle,Huddersfield
-23 Feb 17:30,Leicester,Crystal Palace
-24 Feb 14:05,Arsenal,Southampton
-24 Feb 14:05,Man Utd,Liverpool
-26 Feb 19:45,Cardiff,Everton
-26 Feb 19:45,Huddersfield,Wolves
-26 Feb 19:45,Leicester,Brighton
-26 Feb 20:00,Newcastle,Burnley
-27 Feb 19:45,Arsenal,Bournemouth
-27 Feb 19:45,Southampton,Fulham
-27 Feb 20:00,Chelsea,Spurs
-27 Feb 20:00,Crystal Palace,Man Utd
-27 Feb 20:00,Liverpool,Watford
-27 Feb 20:00,Man City,West Ham
-02 Mar 12:30,Spurs,Arsenal
-02 Mar 15:00,Bournemouth,Man City
-02 Mar 15:00,Brighton,Huddersfield
-02 Mar 15:00,Burnley,Crystal Palace
-02 Mar 15:00,Man Utd,Southampton
-02 Mar 15:00,Wolves,Cardiff
-02 Mar 17:30,West Ham,Newcastle
-03 Mar 12:00,Watford,Leicester
-03 Mar 14:05,Fulham,Chelsea
-03 Mar 16:15,Everton,Liverpool
-09 Mar 12:30,Crystal Palace,Brighton
-09 Mar 15:00,Cardiff,West Ham
-09 Mar 15:00,Huddersfield,Bournemouth
-09 Mar 15:00,Leicester,Fulham
-09 Mar 15:00,Newcastle,Everton
-09 Mar 15:00,Southampton,Spurs
-09 Mar 17:30,Man City,Watford
-10 Mar 12:00,Liverpool,Burnley
-10 Mar 14:05,Chelsea,Wolves
-10 Mar 16:30,Arsenal,Man Utd
-16 Mar 15:00,Bournemouth,Newcastle
-16 Mar 15:00,Burnley,Leicester
-16 Mar 15:00,West Ham,Huddersfield
-17 Mar 14:15,Fulham,Liverpool
-17 Mar 16:30,Everton,Chelsea
-30 Mar 12:30,Fulham,Man City
-30 Mar 15:00,Brighton,Southampton
-30 Mar 15:00,Burnley,Wolves
-30 Mar 15:00,Crystal Palace,Huddersfield
-30 Mar 15:00,Leicester,Bournemouth
-30 Mar 15:00,Man Utd,Watford
-30 Mar 17:30,West Ham,Everton
-31 Mar 14:05,Cardiff,Chelsea
-31 Mar 16:30,Liverpool,Spurs
-01 Apr 20:00,Arsenal,Newcastle
-02 Apr 19:45,Wolves,Man Utd
-05 Apr 20:00,Southampton,Liverpool
-06 Apr 12:30,Man City,Cardiff
-06 Apr 15:00,Bournemouth,Burnley
-06 Apr 15:00,Huddersfield,Leicester
-06 Apr 15:00,Newcastle,Crystal Palace
-06 Apr 15:00,Watford,Fulham
-07 Apr 14:05,Everton,Arsenal
-07 Apr 16:30,Spurs,Brighton
-08 Apr 20:00,Chelsea,West Ham
-12 Apr 20:00,Leicester,Newcastle
-13 Apr 12:30,Spurs,Huddersfield
-13 Apr 15:00,Brighton,Bournemouth
-13 Apr 15:00,Burnley,Cardiff
-13 Apr 15:00,Fulham,Everton
-13 Apr 15:00,Southampton,Wolves
-13 Apr 17:30,Man Utd,West Ham
-14 Apr 14:05,Crystal Palace,Man City
-14 Apr 16:30,Liverpool,Chelsea
-15 Apr 20:00,Watford,Arsenal
-20 Apr 12:30,Man City,Spurs
-20 Apr 15:00,Arsenal,Crystal Palace
-20 Apr 15:00,Bournemouth,Fulham
-20 Apr 15:00,Huddersfield,Watford
-20 Apr 15:00,West Ham,Leicester
-20 Apr 15:00,Wolves,Brighton
-20 Apr 17:30,Newcastle,Southampton
-21 Apr 13:30,Everton,Man Utd
-21 Apr 16:00,Cardiff,Liverpool
-22 Apr 20:00,Chelsea,Burnley
-24 Apr 20:00,Man Utd,Man City
-26 Apr 20:00,Liverpool,Huddersfield
-27 Apr 12:30,Spurs,West Ham
-27 Apr 15:00,Crystal Palace,Everton
-27 Apr 15:00,Fulham,Cardiff
-27 Apr 15:00,Southampton,Bournemouth
-27 Apr 15:00,Watford,Wolves
-27 Apr 17:30,Brighton,Newcastle
-28 Apr 14:05,Burnley,Man City
-28 Apr 16:30,Man Utd,Chelsea
-29 Apr 20:00,Leicester,Arsenal
-04 May 15:00,Arsenal,Brighton
-04 May 15:00,Bournemouth,Spurs
-04 May 15:00,Cardiff,Crystal Palace
-04 May 15:00,Chelsea,Watford
-04 May 15:00,Everton,Burnley
-04 May 15:00,Huddersfield,Man Utd
-04 May 15:00,Man City,Leicester
-04 May 15:00,Newcastle,Liverpool
-04 May 15:00,West Ham,Southampton
-04 May 15:00,Wolves,Fulham
-12 May 15:00,Brighton,Man City
-12 May 15:00,Burnley,Arsenal
-12 May 15:00,Crystal Palace,Bournemouth
-12 May 15:00,Fulham,Newcastle
-12 May 15:00,Leicester,Chelsea
-12 May 15:00,Liverpool,Wolves
-12 May 15:00,Man Utd,Cardiff
-12 May 15:00,Southampton,Huddersfield
-12 May 15:00,Spurs,Everton
-12 May 15:00,Watford,West Ham
+Gameweek,Time,Home,Away
+None,Unknown,Brighton,Cardiff
+None,Unknown,Chelsea,Brighton
+None,Unknown,Spurs,Crystal Palace
+None,Unknown,Watford,Southampton
+None,Unknown,Wolves,Arsenal
+1,10 Aug 20:00,Man Utd,Leicester
+1,11 Aug 12:30,Newcastle,Spurs
+1,11 Aug 15:00,Bournemouth,Cardiff
+1,11 Aug 15:00,Fulham,Crystal Palace
+1,11 Aug 15:00,Huddersfield,Chelsea
+1,11 Aug 15:00,Watford,Brighton
+1,11 Aug 17:30,Wolves,Everton
+1,12 Aug 13:30,Liverpool,West Ham
+1,12 Aug 13:30,Southampton,Burnley
+1,12 Aug 16:00,Arsenal,Man City
+2,18 Aug 12:30,Cardiff,Newcastle
+2,18 Aug 15:00,Everton,Southampton
+2,18 Aug 15:00,Leicester,Wolves
+2,18 Aug 15:00,Spurs,Fulham
+2,18 Aug 15:00,West Ham,Bournemouth
+2,18 Aug 17:30,Chelsea,Arsenal
+2,19 Aug 13:30,Burnley,Watford
+2,19 Aug 13:30,Man City,Huddersfield
+2,19 Aug 16:00,Brighton,Man Utd
+2,20 Aug 20:00,Crystal Palace,Liverpool
+3,25 Aug 12:30,Wolves,Man City
+3,25 Aug 15:00,Arsenal,West Ham
+3,25 Aug 15:00,Bournemouth,Everton
+3,25 Aug 15:00,Huddersfield,Cardiff
+3,25 Aug 15:00,Southampton,Leicester
+3,25 Aug 17:30,Liverpool,Brighton
+3,26 Aug 13:30,Watford,Crystal Palace
+3,26 Aug 16:00,Fulham,Burnley
+3,26 Aug 16:00,Newcastle,Chelsea
+3,27 Aug 20:00,Man Utd,Spurs
+4,01 Sep 12:30,Leicester,Liverpool
+4,01 Sep 15:00,Brighton,Fulham
+4,01 Sep 15:00,Chelsea,Bournemouth
+4,01 Sep 15:00,Crystal Palace,Southampton
+4,01 Sep 15:00,Everton,Huddersfield
+4,01 Sep 15:00,West Ham,Wolves
+4,01 Sep 17:30,Man City,Newcastle
+4,02 Sep 13:30,Cardiff,Arsenal
+4,02 Sep 16:00,Burnley,Man Utd
+4,02 Sep 16:00,Watford,Spurs
+5,15 Sep 12:30,Spurs,Liverpool
+5,15 Sep 15:00,Bournemouth,Leicester
+5,15 Sep 15:00,Chelsea,Cardiff
+5,15 Sep 15:00,Huddersfield,Crystal Palace
+5,15 Sep 15:00,Man City,Fulham
+5,15 Sep 15:00,Newcastle,Arsenal
+5,15 Sep 17:30,Watford,Man Utd
+5,16 Sep 13:30,Wolves,Burnley
+5,16 Sep 16:00,Everton,West Ham
+5,17 Sep 20:00,Southampton,Brighton
+6,22 Sep 12:30,Fulham,Watford
+6,22 Sep 15:00,Burnley,Bournemouth
+6,22 Sep 15:00,Cardiff,Man City
+6,22 Sep 15:00,Crystal Palace,Newcastle
+6,22 Sep 15:00,Leicester,Huddersfield
+6,22 Sep 15:00,Liverpool,Southampton
+6,22 Sep 15:00,Man Utd,Wolves
+6,22 Sep 17:30,Brighton,Spurs
+6,23 Sep 13:30,West Ham,Chelsea
+6,23 Sep 16:00,Arsenal,Everton
+7,29 Sep 12:30,West Ham,Man Utd
+7,29 Sep 15:00,Arsenal,Watford
+7,29 Sep 15:00,Everton,Fulham
+7,29 Sep 15:00,Huddersfield,Spurs
+7,29 Sep 15:00,Man City,Brighton
+7,29 Sep 15:00,Newcastle,Leicester
+7,29 Sep 15:00,Wolves,Southampton
+7,29 Sep 17:30,Chelsea,Liverpool
+7,30 Sep 16:00,Cardiff,Burnley
+7,01 Oct 20:00,Bournemouth,Crystal Palace
+8,05 Oct 20:00,Brighton,West Ham
+8,06 Oct 15:00,Burnley,Huddersfield
+8,06 Oct 15:00,Crystal Palace,Wolves
+8,06 Oct 15:00,Leicester,Everton
+8,06 Oct 15:00,Spurs,Cardiff
+8,06 Oct 15:00,Watford,Bournemouth
+8,06 Oct 17:30,Man Utd,Newcastle
+8,07 Oct 12:00,Fulham,Arsenal
+8,07 Oct 14:15,Southampton,Chelsea
+8,07 Oct 16:30,Liverpool,Man City
+9,20 Oct 12:30,Chelsea,Man Utd
+9,20 Oct 15:00,Bournemouth,Southampton
+9,20 Oct 15:00,Cardiff,Fulham
+9,20 Oct 15:00,Man City,Burnley
+9,20 Oct 15:00,Newcastle,Brighton
+9,20 Oct 15:00,West Ham,Spurs
+9,20 Oct 15:00,Wolves,Watford
+9,20 Oct 17:30,Huddersfield,Liverpool
+9,21 Oct 16:00,Everton,Crystal Palace
+9,22 Oct 20:00,Arsenal,Leicester
+10,27 Oct 15:00,Brighton,Wolves
+10,27 Oct 15:00,Fulham,Bournemouth
+10,27 Oct 15:00,Liverpool,Cardiff
+10,27 Oct 15:00,Southampton,Newcastle
+10,27 Oct 15:00,Watford,Huddersfield
+10,27 Oct 17:30,Leicester,West Ham
+10,28 Oct 13:30,Burnley,Chelsea
+10,28 Oct 13:30,Crystal Palace,Arsenal
+10,28 Oct 16:00,Man Utd,Everton
+10,29 Oct 20:00,Spurs,Man City
+11,03 Nov 12:30,Bournemouth,Man Utd
+11,03 Nov 15:00,Cardiff,Leicester
+11,03 Nov 15:00,Everton,Brighton
+11,03 Nov 15:00,Newcastle,Watford
+11,03 Nov 15:00,West Ham,Burnley
+11,03 Nov 17:30,Arsenal,Liverpool
+11,03 Nov 19:45,Wolves,Spurs
+11,04 Nov 15:00,Man City,Southampton
+11,04 Nov 16:00,Chelsea,Crystal Palace
+11,05 Nov 20:00,Huddersfield,Fulham
+12,10 Nov 12:30,Cardiff,Brighton
+12,10 Nov 15:00,Huddersfield,West Ham
+12,10 Nov 15:00,Leicester,Burnley
+12,10 Nov 15:00,Newcastle,Bournemouth
+12,10 Nov 15:00,Southampton,Watford
+12,10 Nov 17:30,Crystal Palace,Spurs
+12,11 Nov 12:00,Liverpool,Fulham
+12,11 Nov 14:15,Chelsea,Everton
+12,11 Nov 16:30,Arsenal,Wolves
+12,11 Nov 16:30,Man City,Man Utd
+13,24 Nov 15:00,Brighton,Leicester
+13,24 Nov 15:00,Everton,Cardiff
+13,24 Nov 15:00,Fulham,Southampton
+13,24 Nov 15:00,Man Utd,Crystal Palace
+13,24 Nov 15:00,Watford,Liverpool
+13,24 Nov 15:00,West Ham,Man City
+13,24 Nov 17:30,Spurs,Chelsea
+13,25 Nov 13:30,Bournemouth,Arsenal
+13,25 Nov 16:00,Wolves,Huddersfield
+13,26 Nov 20:30,Burnley,Newcastle
+14,30 Nov 20:00,Cardiff,Wolves
+14,01 Dec 15:00,Crystal Palace,Burnley
+14,01 Dec 15:00,Huddersfield,Brighton
+14,01 Dec 15:00,Leicester,Watford
+14,01 Dec 15:00,Man City,Bournemouth
+14,01 Dec 15:00,Newcastle,West Ham
+14,01 Dec 17:30,Southampton,Man Utd
+14,02 Dec 12:00,Chelsea,Fulham
+14,02 Dec 14:05,Arsenal,Spurs
+14,02 Dec 16:15,Liverpool,Everton
+15,04 Dec 19:45,Bournemouth,Huddersfield
+15,04 Dec 19:45,Brighton,Crystal Palace
+15,04 Dec 19:45,West Ham,Cardiff
+15,04 Dec 20:00,Watford,Man City
+15,05 Dec 19:45,Burnley,Liverpool
+15,05 Dec 19:45,Everton,Newcastle
+15,05 Dec 19:45,Fulham,Leicester
+15,05 Dec 19:45,Wolves,Chelsea
+15,05 Dec 20:00,Man Utd,Arsenal
+15,05 Dec 20:00,Spurs,Southampton
+16,08 Dec 12:30,Bournemouth,Liverpool
+16,08 Dec 15:00,Arsenal,Huddersfield
+16,08 Dec 15:00,Burnley,Brighton
+16,08 Dec 15:00,Cardiff,Southampton
+16,08 Dec 15:00,Man Utd,Fulham
+16,08 Dec 15:00,West Ham,Crystal Palace
+16,08 Dec 17:30,Chelsea,Man City
+16,08 Dec 19:45,Leicester,Spurs
+16,09 Dec 16:00,Newcastle,Wolves
+16,10 Dec 20:00,Everton,Watford
+17,15 Dec 12:30,Man City,Everton
+17,15 Dec 15:00,Crystal Palace,Leicester
+17,15 Dec 15:00,Huddersfield,Newcastle
+17,15 Dec 15:00,Spurs,Burnley
+17,15 Dec 15:00,Watford,Cardiff
+17,15 Dec 15:00,Wolves,Bournemouth
+17,15 Dec 17:30,Fulham,West Ham
+17,16 Dec 13:30,Brighton,Chelsea
+17,16 Dec 13:30,Southampton,Arsenal
+17,16 Dec 16:00,Liverpool,Man Utd
+18,21 Dec 20:00,Wolves,Liverpool
+18,22 Dec 12:30,Arsenal,Burnley
+18,22 Dec 15:00,Bournemouth,Brighton
+18,22 Dec 15:00,Chelsea,Leicester
+18,22 Dec 15:00,Huddersfield,Southampton
+18,22 Dec 15:00,Man City,Crystal Palace
+18,22 Dec 15:00,Newcastle,Fulham
+18,22 Dec 15:00,West Ham,Watford
+18,22 Dec 17:30,Cardiff,Man Utd
+18,23 Dec 16:00,Everton,Spurs
+19,26 Dec 12:30,Fulham,Wolves
+19,26 Dec 15:00,Burnley,Everton
+19,26 Dec 15:00,Crystal Palace,Cardiff
+19,26 Dec 15:00,Leicester,Man City
+19,26 Dec 15:00,Liverpool,Newcastle
+19,26 Dec 15:00,Man Utd,Huddersfield
+19,26 Dec 15:00,Spurs,Bournemouth
+19,26 Dec 17:15,Brighton,Arsenal
+19,26 Dec 19:30,Watford,Chelsea
+19,27 Dec 19:45,Southampton,West Ham
+20,29 Dec 15:00,Brighton,Everton
+20,29 Dec 15:00,Fulham,Huddersfield
+20,29 Dec 15:00,Leicester,Cardiff
+20,29 Dec 15:00,Spurs,Wolves
+20,29 Dec 15:00,Watford,Newcastle
+20,29 Dec 17:30,Liverpool,Arsenal
+20,30 Dec 12:00,Crystal Palace,Chelsea
+20,30 Dec 14:15,Burnley,West Ham
+20,30 Dec 14:15,Southampton,Man City
+20,30 Dec 16:30,Man Utd,Bournemouth
+21,01 Jan 12:30,Everton,Leicester
+21,01 Jan 15:00,Arsenal,Fulham
+21,01 Jan 17:30,Cardiff,Spurs
+21,02 Jan 19:45,Bournemouth,Watford
+21,02 Jan 19:45,Chelsea,Southampton
+21,02 Jan 19:45,Huddersfield,Burnley
+21,02 Jan 19:45,West Ham,Brighton
+21,02 Jan 19:45,Wolves,Crystal Palace
+21,02 Jan 20:00,Newcastle,Man Utd
+21,03 Jan 20:00,Man City,Liverpool
+22,12 Jan 12:30,West Ham,Arsenal
+22,12 Jan 15:00,Brighton,Liverpool
+22,12 Jan 15:00,Burnley,Fulham
+22,12 Jan 15:00,Cardiff,Huddersfield
+22,12 Jan 15:00,Crystal Palace,Watford
+22,12 Jan 15:00,Leicester,Southampton
+22,12 Jan 17:30,Chelsea,Newcastle
+22,13 Jan 14:15,Everton,Bournemouth
+22,13 Jan 16:30,Spurs,Man Utd
+22,14 Jan 20:00,Man City,Wolves
+23,19 Jan 12:30,Wolves,Leicester
+23,19 Jan 15:00,Bournemouth,West Ham
+23,19 Jan 15:00,Liverpool,Crystal Palace
+23,19 Jan 15:00,Man Utd,Brighton
+23,19 Jan 15:00,Newcastle,Cardiff
+23,19 Jan 15:00,Southampton,Everton
+23,19 Jan 15:00,Watford,Burnley
+23,19 Jan 17:30,Arsenal,Chelsea
+23,20 Jan 13:30,Huddersfield,Man City
+23,20 Jan 16:00,Fulham,Spurs
+24,29 Jan 19:45,Arsenal,Cardiff
+24,29 Jan 19:45,Fulham,Brighton
+24,29 Jan 19:45,Huddersfield,Everton
+24,29 Jan 19:45,Wolves,West Ham
+24,29 Jan 20:00,Man Utd,Burnley
+24,29 Jan 20:00,Newcastle,Man City
+24,30 Jan 19:45,Bournemouth,Chelsea
+24,30 Jan 19:45,Southampton,Crystal Palace
+24,30 Jan 20:00,Liverpool,Leicester
+24,30 Jan 20:00,Spurs,Watford
+25,02 Feb 12:30,Spurs,Newcastle
+25,02 Feb 15:00,Brighton,Watford
+25,02 Feb 15:00,Burnley,Southampton
+25,02 Feb 15:00,Chelsea,Huddersfield
+25,02 Feb 15:00,Crystal Palace,Fulham
+25,02 Feb 15:00,Everton,Wolves
+25,02 Feb 17:30,Cardiff,Bournemouth
+25,03 Feb 14:05,Leicester,Man Utd
+25,03 Feb 16:30,Man City,Arsenal
+25,04 Feb 20:00,West Ham,Liverpool
+25,06 Feb 19:45,Everton,Man City
+26,09 Feb 12:30,Fulham,Man Utd
+26,09 Feb 15:00,Crystal Palace,West Ham
+26,09 Feb 15:00,Huddersfield,Arsenal
+26,09 Feb 15:00,Liverpool,Bournemouth
+26,09 Feb 15:00,Southampton,Cardiff
+26,09 Feb 15:00,Watford,Everton
+26,09 Feb 17:30,Brighton,Burnley
+26,10 Feb 13:30,Spurs,Leicester
+26,10 Feb 16:00,Man City,Chelsea
+26,11 Feb 20:00,Wolves,Newcastle
+27,22 Feb 19:45,Cardiff,Watford
+27,22 Feb 19:45,West Ham,Fulham
+27,23 Feb 12:30,Burnley,Spurs
+27,23 Feb 15:00,Bournemouth,Wolves
+27,23 Feb 15:00,Newcastle,Huddersfield
+27,23 Feb 17:30,Leicester,Crystal Palace
+27,24 Feb 14:05,Arsenal,Southampton
+27,24 Feb 14:05,Man Utd,Liverpool
+28,26 Feb 19:45,Cardiff,Everton
+28,26 Feb 19:45,Huddersfield,Wolves
+28,26 Feb 19:45,Leicester,Brighton
+28,26 Feb 20:00,Newcastle,Burnley
+28,27 Feb 19:45,Arsenal,Bournemouth
+28,27 Feb 19:45,Southampton,Fulham
+28,27 Feb 20:00,Chelsea,Spurs
+28,27 Feb 20:00,Crystal Palace,Man Utd
+28,27 Feb 20:00,Liverpool,Watford
+28,27 Feb 20:00,Man City,West Ham
+29,02 Mar 12:30,Spurs,Arsenal
+29,02 Mar 15:00,Bournemouth,Man City
+29,02 Mar 15:00,Brighton,Huddersfield
+29,02 Mar 15:00,Burnley,Crystal Palace
+29,02 Mar 15:00,Man Utd,Southampton
+29,02 Mar 15:00,Wolves,Cardiff
+29,02 Mar 17:30,West Ham,Newcastle
+29,03 Mar 12:00,Watford,Leicester
+29,03 Mar 14:05,Fulham,Chelsea
+29,03 Mar 16:15,Everton,Liverpool
+30,09 Mar 12:30,Crystal Palace,Brighton
+30,09 Mar 15:00,Cardiff,West Ham
+30,09 Mar 15:00,Huddersfield,Bournemouth
+30,09 Mar 15:00,Leicester,Fulham
+30,09 Mar 15:00,Newcastle,Everton
+30,09 Mar 15:00,Southampton,Spurs
+30,09 Mar 17:30,Man City,Watford
+30,10 Mar 12:00,Liverpool,Burnley
+30,10 Mar 14:05,Chelsea,Wolves
+30,10 Mar 16:30,Arsenal,Man Utd
+31,16 Mar 15:00,Bournemouth,Newcastle
+31,16 Mar 15:00,Burnley,Leicester
+31,16 Mar 15:00,West Ham,Huddersfield
+31,17 Mar 14:15,Fulham,Liverpool
+31,17 Mar 16:30,Everton,Chelsea
+32,30 Mar 12:30,Fulham,Man City
+32,30 Mar 15:00,Brighton,Southampton
+32,30 Mar 15:00,Burnley,Wolves
+32,30 Mar 15:00,Crystal Palace,Huddersfield
+32,30 Mar 15:00,Leicester,Bournemouth
+32,30 Mar 15:00,Man Utd,Watford
+32,30 Mar 17:30,West Ham,Everton
+32,31 Mar 14:05,Cardiff,Chelsea
+32,31 Mar 16:30,Liverpool,Spurs
+32,01 Apr 20:00,Arsenal,Newcastle
+32,02 Apr 19:45,Wolves,Man Utd
+33,05 Apr 20:00,Southampton,Liverpool
+33,06 Apr 12:30,Man City,Cardiff
+33,06 Apr 15:00,Bournemouth,Burnley
+33,06 Apr 15:00,Huddersfield,Leicester
+33,06 Apr 15:00,Newcastle,Crystal Palace
+33,06 Apr 15:00,Watford,Fulham
+33,07 Apr 14:05,Everton,Arsenal
+33,07 Apr 16:30,Spurs,Brighton
+33,08 Apr 20:00,Chelsea,West Ham
+34,12 Apr 20:00,Leicester,Newcastle
+34,13 Apr 12:30,Spurs,Huddersfield
+34,13 Apr 15:00,Brighton,Bournemouth
+34,13 Apr 15:00,Burnley,Cardiff
+34,13 Apr 15:00,Fulham,Everton
+34,13 Apr 15:00,Southampton,Wolves
+34,13 Apr 17:30,Man Utd,West Ham
+34,14 Apr 14:05,Crystal Palace,Man City
+34,14 Apr 16:30,Liverpool,Chelsea
+34,15 Apr 20:00,Watford,Arsenal
+35,20 Apr 12:30,Man City,Spurs
+35,20 Apr 15:00,Arsenal,Crystal Palace
+35,20 Apr 15:00,Bournemouth,Fulham
+35,20 Apr 15:00,Huddersfield,Watford
+35,20 Apr 15:00,West Ham,Leicester
+35,20 Apr 15:00,Wolves,Brighton
+35,20 Apr 17:30,Newcastle,Southampton
+35,21 Apr 13:30,Everton,Man Utd
+35,21 Apr 16:00,Cardiff,Liverpool
+35,22 Apr 20:00,Chelsea,Burnley
+35,24 Apr 20:00,Man Utd,Man City
+36,26 Apr 20:00,Liverpool,Huddersfield
+36,27 Apr 12:30,Spurs,West Ham
+36,27 Apr 15:00,Crystal Palace,Everton
+36,27 Apr 15:00,Fulham,Cardiff
+36,27 Apr 15:00,Southampton,Bournemouth
+36,27 Apr 15:00,Watford,Wolves
+36,27 Apr 17:30,Brighton,Newcastle
+36,28 Apr 14:05,Burnley,Man City
+36,28 Apr 16:30,Man Utd,Chelsea
+36,29 Apr 20:00,Leicester,Arsenal
+37,04 May 15:00,Arsenal,Brighton
+37,04 May 15:00,Bournemouth,Spurs
+37,04 May 15:00,Cardiff,Crystal Palace
+37,04 May 15:00,Chelsea,Watford
+37,04 May 15:00,Everton,Burnley
+37,04 May 15:00,Huddersfield,Man Utd
+37,04 May 15:00,Man City,Leicester
+37,04 May 15:00,Newcastle,Liverpool
+37,04 May 15:00,West Ham,Southampton
+37,04 May 15:00,Wolves,Fulham
+38,12 May 15:00,Brighton,Man City
+38,12 May 15:00,Burnley,Arsenal
+38,12 May 15:00,Crystal Palace,Bournemouth
+38,12 May 15:00,Fulham,Newcastle
+38,12 May 15:00,Leicester,Chelsea
+38,12 May 15:00,Liverpool,Wolves
+38,12 May 15:00,Man Utd,Cardiff
+38,12 May 15:00,Southampton,Huddersfield
+38,12 May 15:00,Spurs,Everton
+38,12 May 15:00,Watford,West Ham

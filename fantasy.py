@@ -89,15 +89,16 @@ def getCurrentFixtures():
 
 def getAllFixtures():
     tmp_list = []
-    header = "Time,Home,Away"
+    header = "Gameweek,Time,Home,Away"
     tmp_list.append(header)
     for i in datasets["fixtures"]:
         home = getName(i["team_h"])
         away = getName(i["team_a"])
         time = i["kickoff_time_formatted"]
+        gameweek = str(i["event"])
         if time == None:
             time = "Unknown"
-        tmp_list.append(time+","+home+","+away)
+        tmp_list.append(gameweek+","+time+","+home+","+away)
     return tmp_list
 
 ''' returns a defensive ranking list
