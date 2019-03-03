@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.5.2" />
+<title>fantasy API documentation</title>
+<meta name="description" content="" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}#index .two-column{column-count:2}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.name small{font-weight:normal}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase;cursor:pointer}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title"><code>fantasy</code> module</h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">import csv
+import urllib.request, json 
+from pprint import pprint
+import matplotlib.pyplot as plt
+from teamID import teamID
+
+
+def plot_transfers(limit: int) -&gt; None:
+    &#34;&#34;&#34; Plotting histogram of transfers
+    
+    Parameters:
+    limit (int): Lower bound on the difference between transfers_in - transfers_out
+
+    Returns:
+    None 
+    &#34;&#34;&#34;
+    myList = {}
+    plt.xlabel(&#34;Players&#34;);
+    plt.ylabel(&#34;Number of Transfer Out&#34;)
+    for i in datasets[&#34;bootstrap-static&#34;][&#34;elements&#34;]:
+        if i[&#34;in_dreamteam&#34;] is True:
+            print(i[&#34;id&#34;], i[&#34;second_name&#34;])
+        if (i[&#34;transfers_in_event&#34;]-i[&#34;transfers_out_event&#34;])&gt;limit:
+            myList[i[&#34;second_name&#34;]] = i[&#34;transfers_in_event&#34;]-i[&#34;transfers_out_event&#34;]
+    plt.bar(myList.keys(), myList.values())
+    plt.show()
+
+
+def load_dataset(name: str,url_addr: str) -&gt; None:
+    &#34;&#34;&#34; Loading datasets from URL
+
+    Parameters:
+    name (str): Name of the corresponding key
+    url_addr (str): Endpoint URL for the data
+
+    Returns:
+    None
+    &#34;&#34;&#34;
+    with urllib.request.urlopen(url_addr) as url:
+        data = json.loads(url.read().decode())
+    datasets[name] = data
+
+def find_team_from_id(id: int) -&gt; str:
+    &#34;&#34;&#34; Get name of team
+
+    Parameters: 
+    id (int): ID of team.
+
+    Returns:
+    str: Name of team.
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;id&#34;] == id:
+            return i[&#34;name&#34;]
+
+
+def export_to_CSV(csvlist:list,filename:str) -&gt; None:
+    &#34;&#34;&#34; Generating a CSV file from a list
+    
+    Parameters: 
+    csvlist (list): List of strings
+    filename (str): Name of output file 
+
+    Returns:
+    None
+    &#34;&#34;&#34;    
+    if csvlist is None:
+        print(&#34;[ERROR: export_to_CSV()]\n =&gt; List cannot be empty]&#34;)
+        return None
+    f = open(&#34;output/&#34;+filename,&#34;w+&#34;)
+    for i in list:
+        f.write(&#34;%s\n&#34;%i)
+    f.close()
+    
+
+def getID(team_name: str) -&gt; int:
+    &#34;&#34;&#34; Get ID
+    
+    Parameters:
+    team_name (str): Name of team
+    
+    Returns:
+    int: ID of team
+    None: If team doesn&#39;t exist
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;name&#34;] == team_name:
+            return i[&#34;id&#34;]
+    print(&#34;[ERROR : getID()]\n =&gt; Team name is not valid&#34;) 
+    return None
+
+def getName(team_id:int) -&gt; str:
+    &#34;&#34;&#34; Get name
+
+    Parameters:
+    team_id (int): ID of team.
+    
+    Returns:
+    str: Name of team.
+    None: If team doesn&#39;t exist
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;id&#34;] == team_id:
+            return i[&#34;name&#34;]
+    print(&#34;[ERROR : getName()]\n =&gt; ID is not valid&#34;) 
+    return None
+
+def getTeamObj(team_id: int) -&gt; dict:
+    &#34;&#34;&#34; Get team object
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    dict: Team object
+
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;id&#34;] == team_id:
+            return i;
+    print(&#34;[ERROR : getTeamObj()]\n =&gt; ID is not valid&#34;) 
+    return None
+
+def getCurrentFixtures() -&gt; list:
+    &#34;&#34;&#34; Get current week fixtures
+
+    Parameters:
+
+    Returns:
+    list: List of CSV-formatted strings
+
+    &#34;&#34;&#34;
+    tmp_data = []
+    for i in datasets[&#34;bootstrap-static&#34;][&#34;next_event_fixtures&#34;]:
+        home = i[&#34;team_h&#34;]
+        away = i[&#34;team_a&#34;]
+        tmp_data.append(getName(home)+&#34;,&#34;+getName(away)+&#34;,&#34;+str(getTeamObj(home)[&#34;strength&#34;]-getTeamObj(away)[&#34;strength&#34;]))
+    return tmp_data
+
+def getAllFixtures() -&gt; list:
+    &#34;&#34;&#34; Get fixtures 
+
+    Parameters:
+
+    Returns:
+    list: List of CSV-formatted strings
+    &#34;&#34;&#34;
+    tmp_list = []
+    header = &#34;Gameweek,Time,Home,Away&#34;
+    tmp_list.append(header)
+    for i in datasets[&#34;fixtures&#34;]:
+        home = getName(i[&#34;team_h&#34;])
+        away = getName(i[&#34;team_a&#34;])
+        time = i[&#34;kickoff_time_formatted&#34;]
+        gameweek = str(i[&#34;event&#34;])
+        if time == None:
+            time = &#34;Unknown&#34;
+        tmp_list.append(gameweek+&#34;,&#34;+time+&#34;,&#34;+home+&#34;,&#34;+away)
+    return tmp_list
+
+def getSortedStrength(key_name: str) -&gt; list:
+    &#34;&#34;&#34; Get sorted strength ranking list
+
+    Parameters:
+    key_name (str): Type of strength (Must be in allowed list)
+
+    Returns:
+    list: List of CSV-formatted strings
+
+    &#34;&#34;&#34;
+    allowed = [&#34;strength_overall_home&#34;, &#34;strength_overall_away&#34;, &#34;strength_attack_home&#34;,&#34;strength_attack_away&#34;, &#34;strength_defence_home&#34;, &#34;strength_defence_away&#34;,&#34;strength&#34;]
+    if key_name not in allowed:
+        print(&#34;[ERROR : Invalid key_name from getSortedStrength()]\n&#34;,&#34; =&gt; Allowed key_names are:&#34;+str(allowed))
+        return None
+    tmp_list = []
+    copy_datasets = datasets[&#34;teams&#34;].copy()
+    tmp_list.append(&#34;ID,Team,&#34;+key_name)
+    length = len(datasets[&#34;teams&#34;])
+    for i in range(0,20):
+        max_value = 0
+        for j in range(0,len(copy_datasets)):
+            if copy_datasets[j][key_name] &gt;= copy_datasets[max_value][key_name]:
+                max_value = j
+        current = copy_datasets.pop(max_value)
+        tmp_list.append(str(current[&#34;id&#34;])+&#34;,&#34;+current[&#34;name&#34;]+&#34;,&#34;+str(current[key_name]))
+    return tmp_list
+
+def getNextInfo(home: int) -&gt; list:
+    &#34;&#34;&#34; Get match info
+
+    Parameters:
+    home (int): ID of home or away team
+
+    Returns:
+    list: List of CSV-formatted strings containing stats
+
+    &#34;&#34;&#34;
+    if home is None:
+        print(&#34;[ERROR : getNextInfo()]\n =&gt; ID is None&#34;)
+    away = getTeamObj(home[&#34;next_event_fixture&#34;][0][&#34;opponent&#34;])
+    if home[&#34;next_event_fixture&#34;][0][&#34;is_home&#34;] == False:
+        new_home = away
+        away = home
+        home = new_home
+    tmp_list = []
+    tmp_list.append(&#34;Property,Home,Away&#34;)
+    tmp_list.append(&#34;id,&#34;+str(home[&#34;id&#34;])+&#34;,&#34;+str(away[&#34;id&#34;]))
+    tmp_list.append(&#34;name,&#34;+home[&#34;name&#34;]+&#34;,&#34;+away[&#34;name&#34;])
+    tmp_list.append(&#34;short_name,&#34;+home[&#34;short_name&#34;]+&#34;,&#34;+away[&#34;short_name&#34;])
+    tmp_list.append(&#34;strength,&#34;+str(home[&#34;strength&#34;])+&#34;,&#34;+str(away[&#34;strength&#34;]))
+    tmp_list.append(&#34;strength_overall_home,&#34;+str(home[&#34;strength_overall_home&#34;])+&#34;,&#34;+str(away[&#34;strength_overall_home&#34;]))
+    tmp_list.append(&#34;strength_overall_away,&#34;+str(home[&#34;strength_overall_away&#34;])+&#34;,&#34;+str(away[&#34;strength_overall_home&#34;]))
+    tmp_list.append(&#34;strength_attack_home,&#34;+str(home[&#34;strength_attack_home&#34;])+&#34;,&#34;+str(away[&#34;strength_attack_home&#34;]))
+    tmp_list.append(&#34;strength_attack_away,&#34;+str(home[&#34;strength_attack_away&#34;])+&#34;,&#34;+str(away[&#34;strength_attack_away&#34;]))
+    tmp_list.append(&#34;strength_defence_home,&#34;+str(home[&#34;strength_defence_home&#34;])+&#34;,&#34;+str(away[&#34;strength_defence_home&#34;]))
+    tmp_list.append(&#34;strength_defence_away,&#34;+str(home[&#34;strength_defence_away&#34;])+&#34;,&#34;+str(away[&#34;strength_defence_away&#34;]))
+    tmp_list.append(&#34;next_event_fixture_is_home,&#34;+str(home[&#34;next_event_fixture&#34;][0][&#34;is_home&#34;])+&#34;,&#34;+str(away[&#34;next_event_fixture&#34;][0][&#34;is_home&#34;]))
+    return tmp_list
+
+def getPlayers(team_id: int) -&gt; list:
+    &#34;&#34;&#34; Get player list of a team
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    list: List of player objects
+
+    &#34;&#34;&#34;
+    players = []
+    for i in datasets[&#34;elements&#34;]:
+        if i[&#34;team&#34;] == team_id:
+            players.append(i)
+    return players
+
+def getPlayer(player_id: int) -&gt; dict:
+    &#34;&#34;&#34; Get player object
+
+    Parameters:
+    player_id (int): ID of player.
+
+    Returns:
+    dict: Player object.
+    &#34;&#34;&#34;
+    for i in datasets[&#34;elements&#34;]:
+        if i[&#34;id&#34;] == player_id:
+            return i
+    return None;
+
+def showPlayers(team_id: int) -&gt; None:
+    &#34;&#34;&#34; Print players&#39; id, first name and last name to console
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    None
+
+    &#34;&#34;&#34;
+    players = getPlayers(team_id)
+    width=20
+    print(&#34;ID&#34;.ljust(5)+&#34;Second Name&#34;.ljust(width)+&#34;First Name&#34;.ljust(width))
+    for i in players:
+        print(str(i[&#34;id&#34;]).ljust(5)+i[&#34;second_name&#34;].ljust(width)+i[&#34;first_name&#34;].ljust(width))
+
+def getPlayerDetails(player_id: int) -&gt; list:
+    &#34;&#34;&#34; Get details of player
+
+    Parameters:
+    player_id (int): ID of player
+
+    Returns:
+    list: List of CSV-formatted strings containg player stats.
+
+    &#34;&#34;&#34;
+    player = getPlayer(player_id)
+    tmp_list = []
+    for i in player.keys():
+        tmp_list.append(str(i)+&#34;,&#34;+str(player[i]))
+    return tmp_list
+
+def getPlayerName(player_id: int) -&gt; str:
+    &#34;&#34;&#34; Get name of player
+
+    Parameters:
+    player_id (int): ID of player.
+    
+    Returns:
+    str: String containing second_name + first_name
+  
+    &#34;&#34;&#34;
+    for i in datasets[&#34;elements&#34;]:
+        if i[&#34;id&#34;] == player_id:
+            return i[&#34;second_name&#34;]+&#34;_&#34;+i[&#34;first_name&#34;]
+    return None
+
+# VARIABLES                      
+&#39;&#39;&#39; URL path &#39;&#39;&#39;
+path =  &#34;https://fantasy.premierleague.com/drf/&#34;        
+
+# DATA STRUCTURES
+&#39;&#39;&#39; datasets is a dictionary which will keep all 
+loaded datasets. datasets ={ &#39;Fixture&#39;: dataset, ...} &#39;&#39;&#39;
+datasets = {}
+
+# INITIALIZE
+&#39;&#39;&#39; LOADING DATASETS FROM URL&#39;s
+pass a name and url to function: load_dataset(name, url) &#39;&#39;&#39;
+load_dataset(&#34;fixtures&#34;, path+&#34;fixtures&#34;)
+load_dataset(&#34;teams&#34;, path+&#34;teams&#34;)
+load_dataset(&#34;region&#34;, path+&#34;region&#34;)
+load_dataset(&#34;bootstrap-static&#34;, path+&#34;bootstrap-static&#34;)
+load_dataset(&#34;elements&#34;,path+&#34;elements&#34;)
+#Uncomment the line below to import your personal team (Remember to set your teamID in teamID.py)
+#load_dataset(&#34;my-team&#34;,path+&#34;my-team/&#34;+teamID)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-variables">Global variables</h2>
+<dl>
+<dt id="fantasy.datasets"><code class="name">var <span class="ident">datasets</span></code></dt>
+<dd>
+<section class="desc"><p>LOADING DATASETS FROM URL's
+pass a name and url to function: load_dataset(name, url)</p></section>
+</dd>
+<dt id="fantasy.path"><code class="name">var <span class="ident">path</span></code></dt>
+<dd>
+<section class="desc"><p>datasets is a dictionary which will keep all
+loaded datasets. datasets ={ 'Fixture': dataset, &hellip;}</p></section>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="fantasy.export_to_CSV"><code class="name flex">
+<span>def <span class="ident">export_to_CSV</span></span>(<span>csvlist, filename)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Generating a CSV file from a list</p>
+<p>Parameters:
+csvlist (list): List of strings
+filename (str): Name of output file </p>
+<p>Returns:
+None</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def export_to_CSV(csvlist:list,filename:str) -&gt; None:
+    &#34;&#34;&#34; Generating a CSV file from a list
+    
+    Parameters: 
+    csvlist (list): List of strings
+    filename (str): Name of output file 
+
+    Returns:
+    None
+    &#34;&#34;&#34;    
+    if csvlist is None:
+        print(&#34;[ERROR: export_to_CSV()]\n =&gt; List cannot be empty]&#34;)
+        return None
+    f = open(&#34;output/&#34;+filename,&#34;w+&#34;)
+    for i in list:
+        f.write(&#34;%s\n&#34;%i)
+    f.close()</code></pre>
+</details>
+</dd>
+<dt id="fantasy.find_team_from_id"><code class="name flex">
+<span>def <span class="ident">find_team_from_id</span></span>(<span>id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get name of team</p>
+<p>Parameters:
+id (int): ID of team.</p>
+<p>Returns:
+str: Name of team.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def find_team_from_id(id: int) -&gt; str:
+    &#34;&#34;&#34; Get name of team
+
+    Parameters: 
+    id (int): ID of team.
+
+    Returns:
+    str: Name of team.
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;id&#34;] == id:
+            return i[&#34;name&#34;]</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getAllFixtures"><code class="name flex">
+<span>def <span class="ident">getAllFixtures</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get fixtures </p>
+<p>Parameters:</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>list</code></strong> :&ensp;<code>List</code> of <code>CSV</code>-<code>formatted</code> <code>strings</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getAllFixtures() -&gt; list:
+    &#34;&#34;&#34; Get fixtures 
+
+    Parameters:
+
+    Returns:
+    list: List of CSV-formatted strings
+    &#34;&#34;&#34;
+    tmp_list = []
+    header = &#34;Gameweek,Time,Home,Away&#34;
+    tmp_list.append(header)
+    for i in datasets[&#34;fixtures&#34;]:
+        home = getName(i[&#34;team_h&#34;])
+        away = getName(i[&#34;team_a&#34;])
+        time = i[&#34;kickoff_time_formatted&#34;]
+        gameweek = str(i[&#34;event&#34;])
+        if time == None:
+            time = &#34;Unknown&#34;
+        tmp_list.append(gameweek+&#34;,&#34;+time+&#34;,&#34;+home+&#34;,&#34;+away)
+    return tmp_list</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getCurrentFixtures"><code class="name flex">
+<span>def <span class="ident">getCurrentFixtures</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get current week fixtures</p>
+<p>Parameters:</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>list</code></strong> :&ensp;<code>List</code> of <code>CSV</code>-<code>formatted</code> <code>strings</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getCurrentFixtures() -&gt; list:
+    &#34;&#34;&#34; Get current week fixtures
+
+    Parameters:
+
+    Returns:
+    list: List of CSV-formatted strings
+
+    &#34;&#34;&#34;
+    tmp_data = []
+    for i in datasets[&#34;bootstrap-static&#34;][&#34;next_event_fixtures&#34;]:
+        home = i[&#34;team_h&#34;]
+        away = i[&#34;team_a&#34;]
+        tmp_data.append(getName(home)+&#34;,&#34;+getName(away)+&#34;,&#34;+str(getTeamObj(home)[&#34;strength&#34;]-getTeamObj(away)[&#34;strength&#34;]))
+    return tmp_data</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getID"><code class="name flex">
+<span>def <span class="ident">getID</span></span>(<span>team_name)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get ID</p>
+<p>Parameters:
+team_name (str): Name of team</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>int</code></strong> :&ensp;<code>ID</code> of <code>team</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>None</code></strong> :&ensp;<code>If</code> <code>team</code> <code>doesn't</code> <code>exist</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getID(team_name: str) -&gt; int:
+    &#34;&#34;&#34; Get ID
+    
+    Parameters:
+    team_name (str): Name of team
+    
+    Returns:
+    int: ID of team
+    None: If team doesn&#39;t exist
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;name&#34;] == team_name:
+            return i[&#34;id&#34;]
+    print(&#34;[ERROR : getID()]\n =&gt; Team name is not valid&#34;) 
+    return None</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getName"><code class="name flex">
+<span>def <span class="ident">getName</span></span>(<span>team_id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get name</p>
+<p>Parameters:
+team_id (int): ID of team.</p>
+<dl>
+<dt>Returns:</dt>
+<dt>str: Name of team.</dt>
+<dt><strong><code>None</code></strong> :&ensp;<code>If</code> <code>team</code> <code>doesn't</code> <code>exist</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getName(team_id:int) -&gt; str:
+    &#34;&#34;&#34; Get name
+
+    Parameters:
+    team_id (int): ID of team.
+    
+    Returns:
+    str: Name of team.
+    None: If team doesn&#39;t exist
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;id&#34;] == team_id:
+            return i[&#34;name&#34;]
+    print(&#34;[ERROR : getName()]\n =&gt; ID is not valid&#34;) 
+    return None</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getNextInfo"><code class="name flex">
+<span>def <span class="ident">getNextInfo</span></span>(<span>home)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get match info</p>
+<p>Parameters:
+home (int): ID of home or away team</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>list</code></strong> :&ensp;<code>List</code> of <code>CSV</code>-<code>formatted</code> <code>strings</code> <code>containing</code> <code>stats</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getNextInfo(home: int) -&gt; list:
+    &#34;&#34;&#34; Get match info
+
+    Parameters:
+    home (int): ID of home or away team
+
+    Returns:
+    list: List of CSV-formatted strings containing stats
+
+    &#34;&#34;&#34;
+    if home is None:
+        print(&#34;[ERROR : getNextInfo()]\n =&gt; ID is None&#34;)
+    away = getTeamObj(home[&#34;next_event_fixture&#34;][0][&#34;opponent&#34;])
+    if home[&#34;next_event_fixture&#34;][0][&#34;is_home&#34;] == False:
+        new_home = away
+        away = home
+        home = new_home
+    tmp_list = []
+    tmp_list.append(&#34;Property,Home,Away&#34;)
+    tmp_list.append(&#34;id,&#34;+str(home[&#34;id&#34;])+&#34;,&#34;+str(away[&#34;id&#34;]))
+    tmp_list.append(&#34;name,&#34;+home[&#34;name&#34;]+&#34;,&#34;+away[&#34;name&#34;])
+    tmp_list.append(&#34;short_name,&#34;+home[&#34;short_name&#34;]+&#34;,&#34;+away[&#34;short_name&#34;])
+    tmp_list.append(&#34;strength,&#34;+str(home[&#34;strength&#34;])+&#34;,&#34;+str(away[&#34;strength&#34;]))
+    tmp_list.append(&#34;strength_overall_home,&#34;+str(home[&#34;strength_overall_home&#34;])+&#34;,&#34;+str(away[&#34;strength_overall_home&#34;]))
+    tmp_list.append(&#34;strength_overall_away,&#34;+str(home[&#34;strength_overall_away&#34;])+&#34;,&#34;+str(away[&#34;strength_overall_home&#34;]))
+    tmp_list.append(&#34;strength_attack_home,&#34;+str(home[&#34;strength_attack_home&#34;])+&#34;,&#34;+str(away[&#34;strength_attack_home&#34;]))
+    tmp_list.append(&#34;strength_attack_away,&#34;+str(home[&#34;strength_attack_away&#34;])+&#34;,&#34;+str(away[&#34;strength_attack_away&#34;]))
+    tmp_list.append(&#34;strength_defence_home,&#34;+str(home[&#34;strength_defence_home&#34;])+&#34;,&#34;+str(away[&#34;strength_defence_home&#34;]))
+    tmp_list.append(&#34;strength_defence_away,&#34;+str(home[&#34;strength_defence_away&#34;])+&#34;,&#34;+str(away[&#34;strength_defence_away&#34;]))
+    tmp_list.append(&#34;next_event_fixture_is_home,&#34;+str(home[&#34;next_event_fixture&#34;][0][&#34;is_home&#34;])+&#34;,&#34;+str(away[&#34;next_event_fixture&#34;][0][&#34;is_home&#34;]))
+    return tmp_list</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getPlayer"><code class="name flex">
+<span>def <span class="ident">getPlayer</span></span>(<span>player_id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get player object</p>
+<p>Parameters:
+player_id (int): ID of player.</p>
+<p>Returns:
+dict: Player object.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getPlayer(player_id: int) -&gt; dict:
+    &#34;&#34;&#34; Get player object
+
+    Parameters:
+    player_id (int): ID of player.
+
+    Returns:
+    dict: Player object.
+    &#34;&#34;&#34;
+    for i in datasets[&#34;elements&#34;]:
+        if i[&#34;id&#34;] == player_id:
+            return i
+    return None;</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getPlayerDetails"><code class="name flex">
+<span>def <span class="ident">getPlayerDetails</span></span>(<span>player_id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get details of player</p>
+<p>Parameters:
+player_id (int): ID of player</p>
+<p>Returns:
+list: List of CSV-formatted strings containg player stats.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getPlayerDetails(player_id: int) -&gt; list:
+    &#34;&#34;&#34; Get details of player
+
+    Parameters:
+    player_id (int): ID of player
+
+    Returns:
+    list: List of CSV-formatted strings containg player stats.
+
+    &#34;&#34;&#34;
+    player = getPlayer(player_id)
+    tmp_list = []
+    for i in player.keys():
+        tmp_list.append(str(i)+&#34;,&#34;+str(player[i]))
+    return tmp_list</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getPlayerName"><code class="name flex">
+<span>def <span class="ident">getPlayerName</span></span>(<span>player_id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get name of player</p>
+<p>Parameters:
+player_id (int): ID of player.</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>str</code></strong> :&ensp;<code>String</code> <code>containing</code> <code>second_name</code> + <code>first_name</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getPlayerName(player_id: int) -&gt; str:
+    &#34;&#34;&#34; Get name of player
+
+    Parameters:
+    player_id (int): ID of player.
+    
+    Returns:
+    str: String containing second_name + first_name
+  
+    &#34;&#34;&#34;
+    for i in datasets[&#34;elements&#34;]:
+        if i[&#34;id&#34;] == player_id:
+            return i[&#34;second_name&#34;]+&#34;_&#34;+i[&#34;first_name&#34;]
+    return None</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getPlayers"><code class="name flex">
+<span>def <span class="ident">getPlayers</span></span>(<span>team_id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get player list of a team</p>
+<p>Parameters:
+team_id (int): ID of team.</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>list</code></strong> :&ensp;<code>List</code> of <code>player</code> <code>objects</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getPlayers(team_id: int) -&gt; list:
+    &#34;&#34;&#34; Get player list of a team
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    list: List of player objects
+
+    &#34;&#34;&#34;
+    players = []
+    for i in datasets[&#34;elements&#34;]:
+        if i[&#34;team&#34;] == team_id:
+            players.append(i)
+    return players</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getSortedStrength"><code class="name flex">
+<span>def <span class="ident">getSortedStrength</span></span>(<span>key_name)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get sorted strength ranking list</p>
+<p>Parameters:
+key_name (str): Type of strength (Must be in allowed list)</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>list</code></strong> :&ensp;<code>List</code> of <code>CSV</code>-<code>formatted</code> <code>strings</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getSortedStrength(key_name: str) -&gt; list:
+    &#34;&#34;&#34; Get sorted strength ranking list
+
+    Parameters:
+    key_name (str): Type of strength (Must be in allowed list)
+
+    Returns:
+    list: List of CSV-formatted strings
+
+    &#34;&#34;&#34;
+    allowed = [&#34;strength_overall_home&#34;, &#34;strength_overall_away&#34;, &#34;strength_attack_home&#34;,&#34;strength_attack_away&#34;, &#34;strength_defence_home&#34;, &#34;strength_defence_away&#34;,&#34;strength&#34;]
+    if key_name not in allowed:
+        print(&#34;[ERROR : Invalid key_name from getSortedStrength()]\n&#34;,&#34; =&gt; Allowed key_names are:&#34;+str(allowed))
+        return None
+    tmp_list = []
+    copy_datasets = datasets[&#34;teams&#34;].copy()
+    tmp_list.append(&#34;ID,Team,&#34;+key_name)
+    length = len(datasets[&#34;teams&#34;])
+    for i in range(0,20):
+        max_value = 0
+        for j in range(0,len(copy_datasets)):
+            if copy_datasets[j][key_name] &gt;= copy_datasets[max_value][key_name]:
+                max_value = j
+        current = copy_datasets.pop(max_value)
+        tmp_list.append(str(current[&#34;id&#34;])+&#34;,&#34;+current[&#34;name&#34;]+&#34;,&#34;+str(current[key_name]))
+    return tmp_list</code></pre>
+</details>
+</dd>
+<dt id="fantasy.getTeamObj"><code class="name flex">
+<span>def <span class="ident">getTeamObj</span></span>(<span>team_id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Get team object</p>
+<p>Parameters:
+team_id (int): ID of team.</p>
+<dl>
+<dt>Returns:</dt>
+<dt><strong><code>dict</code></strong> :&ensp;<code>Team</code> <code>object</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def getTeamObj(team_id: int) -&gt; dict:
+    &#34;&#34;&#34; Get team object
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    dict: Team object
+
+    &#34;&#34;&#34;
+    for i in datasets[&#34;teams&#34;]:
+        if i[&#34;id&#34;] == team_id:
+            return i;
+    print(&#34;[ERROR : getTeamObj()]\n =&gt; ID is not valid&#34;) 
+    return None</code></pre>
+</details>
+</dd>
+<dt id="fantasy.load_dataset"><code class="name flex">
+<span>def <span class="ident">load_dataset</span></span>(<span>name, url_addr)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Loading datasets from URL</p>
+<p>Parameters:
+name (str): Name of the corresponding key
+url_addr (str): Endpoint URL for the data</p>
+<p>Returns:
+None</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def load_dataset(name: str,url_addr: str) -&gt; None:
+    &#34;&#34;&#34; Loading datasets from URL
+
+    Parameters:
+    name (str): Name of the corresponding key
+    url_addr (str): Endpoint URL for the data
+
+    Returns:
+    None
+    &#34;&#34;&#34;
+    with urllib.request.urlopen(url_addr) as url:
+        data = json.loads(url.read().decode())
+    datasets[name] = data</code></pre>
+</details>
+</dd>
+<dt id="fantasy.plot_transfers"><code class="name flex">
+<span>def <span class="ident">plot_transfers</span></span>(<span>limit)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Plotting histogram of transfers</p>
+<p>Parameters:
+limit (int): Lower bound on the difference between transfers_in - transfers_out</p>
+<p>Returns:
+None</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def plot_transfers(limit: int) -&gt; None:
+    &#34;&#34;&#34; Plotting histogram of transfers
+    
+    Parameters:
+    limit (int): Lower bound on the difference between transfers_in - transfers_out
+
+    Returns:
+    None 
+    &#34;&#34;&#34;
+    myList = {}
+    plt.xlabel(&#34;Players&#34;);
+    plt.ylabel(&#34;Number of Transfer Out&#34;)
+    for i in datasets[&#34;bootstrap-static&#34;][&#34;elements&#34;]:
+        if i[&#34;in_dreamteam&#34;] is True:
+            print(i[&#34;id&#34;], i[&#34;second_name&#34;])
+        if (i[&#34;transfers_in_event&#34;]-i[&#34;transfers_out_event&#34;])&gt;limit:
+            myList[i[&#34;second_name&#34;]] = i[&#34;transfers_in_event&#34;]-i[&#34;transfers_out_event&#34;]
+    plt.bar(myList.keys(), myList.values())
+    plt.show()</code></pre>
+</details>
+</dd>
+<dt id="fantasy.showPlayers"><code class="name flex">
+<span>def <span class="ident">showPlayers</span></span>(<span>team_id)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Print players' id, first name and last name to console</p>
+<p>Parameters:
+team_id (int): ID of team.</p>
+<p>Returns:
+None</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">def showPlayers(team_id: int) -&gt; None:
+    &#34;&#34;&#34; Print players&#39; id, first name and last name to console
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    None
+
+    &#34;&#34;&#34;
+    players = getPlayers(team_id)
+    width=20
+    print(&#34;ID&#34;.ljust(5)+&#34;Second Name&#34;.ljust(width)+&#34;First Name&#34;.ljust(width))
+    for i in players:
+        print(str(i[&#34;id&#34;]).ljust(5)+i[&#34;second_name&#34;].ljust(width)+i[&#34;first_name&#34;].ljust(width))</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-variables">Global variables</a></h3>
+<ul class="">
+<li><code><a title="fantasy.datasets" href="#fantasy.datasets">datasets</a></code></li>
+<li><code><a title="fantasy.path" href="#fantasy.path">path</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="fantasy.export_to_CSV" href="#fantasy.export_to_CSV">export_to_CSV</a></code></li>
+<li><code><a title="fantasy.find_team_from_id" href="#fantasy.find_team_from_id">find_team_from_id</a></code></li>
+<li><code><a title="fantasy.getAllFixtures" href="#fantasy.getAllFixtures">getAllFixtures</a></code></li>
+<li><code><a title="fantasy.getCurrentFixtures" href="#fantasy.getCurrentFixtures">getCurrentFixtures</a></code></li>
+<li><code><a title="fantasy.getID" href="#fantasy.getID">getID</a></code></li>
+<li><code><a title="fantasy.getName" href="#fantasy.getName">getName</a></code></li>
+<li><code><a title="fantasy.getNextInfo" href="#fantasy.getNextInfo">getNextInfo</a></code></li>
+<li><code><a title="fantasy.getPlayer" href="#fantasy.getPlayer">getPlayer</a></code></li>
+<li><code><a title="fantasy.getPlayerDetails" href="#fantasy.getPlayerDetails">getPlayerDetails</a></code></li>
+<li><code><a title="fantasy.getPlayerName" href="#fantasy.getPlayerName">getPlayerName</a></code></li>
+<li><code><a title="fantasy.getPlayers" href="#fantasy.getPlayers">getPlayers</a></code></li>
+<li><code><a title="fantasy.getSortedStrength" href="#fantasy.getSortedStrength">getSortedStrength</a></code></li>
+<li><code><a title="fantasy.getTeamObj" href="#fantasy.getTeamObj">getTeamObj</a></code></li>
+<li><code><a title="fantasy.load_dataset" href="#fantasy.load_dataset">load_dataset</a></code></li>
+<li><code><a title="fantasy.plot_transfers" href="#fantasy.plot_transfers">plot_transfers</a></code></li>
+<li><code><a title="fantasy.showPlayers" href="#fantasy.showPlayers">showPlayers</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.5.2</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

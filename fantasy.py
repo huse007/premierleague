@@ -5,9 +5,15 @@ import matplotlib.pyplot as plt
 from teamID import teamID
 
 
-# FUNCTIONS
-''' limit is the lower bound of transfers in - transfers out '''
 def plot_transfers(limit: int) -> None:
+    """ Plotting histogram of transfers
+    
+    Parameters:
+    limit (int): Lower bound on the difference between transfers_in - transfers_out
+
+    Returns:
+    None 
+    """
     myList = {}
     plt.xlabel("Players");
     plt.ylabel("Number of Transfer Out")
@@ -19,23 +25,46 @@ def plot_transfers(limit: int) -> None:
     plt.bar(myList.keys(), myList.values())
     plt.show()
 
-''' loading dataset from url '''
+
 def load_dataset(name: str,url_addr: str) -> None:
+    """ Loading datasets from URL
+
+    Parameters:
+    name (str): Name of the corresponding key
+    url_addr (str): Endpoint URL for the data
+
+    Returns:
+    None
+    """
     with urllib.request.urlopen(url_addr) as url:
         data = json.loads(url.read().decode())
     datasets[name] = data
 
-''' input: id
-return value: team name '''
 def find_team_from_id(id: int) -> str:
+    """ Get name of team
+
+    Parameters: 
+    id (int): ID of team.
+
+    Returns:
+    str: Name of team.
+    """
     for i in datasets["teams"]:
         if i["id"] == id:
             return i["name"]
 
-''' Generating a CSV file from a list
-input: list of strings, name of file '''
-def export_to_CSV(list:list,filename:str) -> None:
-    if list is None:
+
+def export_to_CSV(csvlist:list,filename:str) -> None:
+    """ Generating a CSV file from a list
+    
+    Parameters: 
+    csvlist (list): List of strings
+    filename (str): Name of output file 
+
+    Returns:
+    None
+    """    
+    if csvlist is None:
         print("[ERROR: export_to_CSV()]\n => List cannot be empty]")
         return None
     f = open("output/"+filename,"w+")
@@ -43,18 +72,33 @@ def export_to_CSV(list:list,filename:str) -> None:
         f.write("%s\n"%i)
     f.close()
     
-''' input argument: name of team
-return: id of team (or None if team doesn't exist)'''
+
 def getID(team_name: str) -> int:
+    """ Get ID
+    
+    Parameters:
+    team_name (str): Name of team
+    
+    Returns:
+    int: ID of team
+    None: If team doesn't exist
+    """
     for i in datasets["teams"]:
         if i["name"] == team_name:
             return i["id"]
     print("[ERROR : getID()]\n => Team name is not valid") 
     return None
 
-''' input argument: team id
-return: name of team (or None)'''
 def getName(team_id:int) -> str:
+    """ Get name
+
+    Parameters:
+    team_id (int): ID of team.
+    
+    Returns:
+    str: Name of team.
+    None: If team doesn't exist
+    """
     for i in datasets["teams"]:
         if i["id"] == team_id:
             return i["name"]
@@ -62,6 +106,15 @@ def getName(team_id:int) -> str:
     return None
 
 def getTeamObj(team_id: int) -> dict:
+    """ Get team object
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    dict: Team object
+
+    """
     for i in datasets["teams"]:
         if i["id"] == team_id:
             return i;
@@ -69,6 +122,14 @@ def getTeamObj(team_id: int) -> dict:
     return None
 
 def getCurrentFixtures() -> list:
+    """ Get current week fixtures
+
+    Parameters:
+
+    Returns:
+    list: List of CSV-formatted strings
+
+    """
     tmp_data = []
     for i in datasets["bootstrap-static"]["next_event_fixtures"]:
         home = i["team_h"]
@@ -77,6 +138,13 @@ def getCurrentFixtures() -> list:
     return tmp_data
 
 def getAllFixtures() -> list:
+    """ Get fixtures 
+
+    Parameters:
+
+    Returns:
+    list: List of CSV-formatted strings
+    """
     tmp_list = []
     header = "Gameweek,Time,Home,Away"
     tmp_list.append(header)
@@ -90,9 +158,16 @@ def getAllFixtures() -> list:
         tmp_list.append(gameweek+","+time+","+home+","+away)
     return tmp_list
 
-''' returns a defensive ranking list
-key_name must be in allowed ''' 
-def getSortedStrength(key_name) -> list:
+def getSortedStrength(key_name: str) -> list:
+    """ Get sorted strength ranking list
+
+    Parameters:
+    key_name (str): Type of strength (Must be in allowed list)
+
+    Returns:
+    list: List of CSV-formatted strings
+
+    """
     allowed = ["strength_overall_home", "strength_overall_away", "strength_attack_home","strength_attack_away", "strength_defence_home", "strength_defence_away","strength"]
     if key_name not in allowed:
         print("[ERROR : Invalid key_name from getSortedStrength()]\n"," => Allowed key_names are:"+str(allowed))
@@ -110,9 +185,16 @@ def getSortedStrength(key_name) -> list:
         tmp_list.append(str(current["id"])+","+current["name"]+","+str(current[key_name]))
     return tmp_list
 
-''' returns a list of stats for the next game 
-input: one of the teams '''
 def getNextInfo(home: int) -> list:
+    """ Get match info
+
+    Parameters:
+    home (int): ID of home or away team
+
+    Returns:
+    list: List of CSV-formatted strings containing stats
+
+    """
     if home is None:
         print("[ERROR : getNextInfo()]\n => ID is None")
     away = getTeamObj(home["next_event_fixture"][0]["opponent"])
@@ -135,39 +217,78 @@ def getNextInfo(home: int) -> list:
     tmp_list.append("next_event_fixture_is_home,"+str(home["next_event_fixture"][0]["is_home"])+","+str(away["next_event_fixture"][0]["is_home"]))
     return tmp_list
 
-''' returns a list containing player objects from current team '''
 def getPlayers(team_id: int) -> list:
+    """ Get player list of a team
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    list: List of player objects
+
+    """
     players = []
     for i in datasets["elements"]:
         if i["team"] == team_id:
             players.append(i)
     return players
 
-''' returns player object '''
 def getPlayer(player_id: int) -> dict:
+    """ Get player object
+
+    Parameters:
+    player_id (int): ID of player.
+
+    Returns:
+    dict: Player object.
+    """
     for i in datasets["elements"]:
         if i["id"] == player_id:
             return i
     return None;
 
-''' print players' id, first name, last name to screen '''
 def showPlayers(team_id: int) -> None:
+    """ Print players' id, first name and last name to console
+
+    Parameters:
+    team_id (int): ID of team.
+
+    Returns:
+    None
+
+    """
     players = getPlayers(team_id)
     width=20
     print("ID".ljust(5)+"Second Name".ljust(width)+"First Name".ljust(width))
     for i in players:
         print(str(i["id"]).ljust(5)+i["second_name"].ljust(width)+i["first_name"].ljust(width))
 
-''' returns a list of player details '''
 def getPlayerDetails(player_id: int) -> list:
+    """ Get details of player
+
+    Parameters:
+    player_id (int): ID of player
+
+    Returns:
+    list: List of CSV-formatted strings containg player stats.
+
+    """
     player = getPlayer(player_id)
     tmp_list = []
     for i in player.keys():
         tmp_list.append(str(i)+","+str(player[i]))
     return tmp_list
 
-''' returns a string containing second+first name '''
 def getPlayerName(player_id: int) -> str:
+    """ Get name of player
+
+    Parameters:
+    player_id (int): ID of player.
+    
+    Returns:
+    str: String containing second_name + first_name
+  
+    """
     for i in datasets["elements"]:
         if i["id"] == player_id:
             return i["second_name"]+"_"+i["first_name"]
