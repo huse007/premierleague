@@ -1,6 +1,7 @@
 from fantasy import *
 
-
+'''
+# EXAMPLES
 export_to_CSV(getCurrentFixtures(),"fixtures/current_fixtures.csv")
 export_to_CSV(getAllFixtures(),"fixtures/all_fixtures.csv")
 export_to_CSV(getSortedStrength("strength_overall_home"),"stats/strength_overall_home.csv")
@@ -11,7 +12,7 @@ export_to_CSV(getSortedStrength("strength_defence_home"),"stats/strength_defence
 export_to_CSV(getSortedStrength("strength_defence_away"),"stats/strength_defence_away.csv")
 export_to_CSV(getSortedStrength("strength"),"stats/strength.csv")
 #export_to_CSV(getNextInfo(getTeamObj(getID("Arsenal")),"next_info.csv")
-'''
+
 for i in datasets["teams"]:
     export_to_CSV(getNextInfo(i),"teams/next_game_"+i["name"]+".csv")
 

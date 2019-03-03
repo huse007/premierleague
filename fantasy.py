@@ -1,8 +1,8 @@
 import csv
 import urllib.request, json 
-import json
 from pprint import pprint
 import matplotlib.pyplot as plt
+from teamID import teamID
 
 # FUNCTIONS
 ''' limit is the lower bound of transfers in - transfers out '''
@@ -200,4 +200,5 @@ load_dataset("teams", path+"teams")
 load_dataset("region", path+"region")
 load_dataset("bootstrap-static", path+"bootstrap-static")
 load_dataset("elements",path+"elements")
-
+#Uncomment the line below to import your personal team (Remember to set your teamID in teamID.py)
+#load_dataset("my-team",path+"my-team/"+teamID)
