@@ -295,13 +295,13 @@ def getPlayerName(player_id: int) -> str:
     return None
 
 # VARIABLES                      
-''' URL path '''
-path =  "https://fantasy.premierleague.com/drf/"        
+path =  "https://fantasy.premierleague.com/drf/" 
+""" str: URL path """
 
 # DATA STRUCTURES
-''' datasets is a dictionary which will keep all 
-loaded datasets. datasets ={ 'Fixture': dataset, ...} '''
-datasets = {}
+datasets = {} 
+""" dict: Datasets is a dictionary containing all data sets """
+
 
 # INITIALIZE
 ''' LOADING DATASETS FROM URL's

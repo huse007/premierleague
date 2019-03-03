@@ -319,13 +319,13 @@ def getPlayerName(player_id: int) -&gt; str:
     return None
 
 # VARIABLES                      
-&#39;&#39;&#39; URL path &#39;&#39;&#39;
-path =  &#34;https://fantasy.premierleague.com/drf/&#34;        
+path =  &#34;https://fantasy.premierleague.com/drf/&#34; 
+&#34;&#34;&#34; str: URL path &#34;&#34;&#34;
 
 # DATA STRUCTURES
-&#39;&#39;&#39; datasets is a dictionary which will keep all 
-loaded datasets. datasets ={ &#39;Fixture&#39;: dataset, ...} &#39;&#39;&#39;
-datasets = {}
+datasets = {} 
+&#34;&#34;&#34; dict: Datasets is a dictionary containing all data sets &#34;&#34;&#34;
+
 
 # INITIALIZE
 &#39;&#39;&#39; LOADING DATASETS FROM URL&#39;s
@@ -346,13 +346,17 @@ load_dataset(&#34;elements&#34;,path+&#34;elements&#34;)
 <dl>
 <dt id="fantasy.datasets"><code class="name">var <span class="ident">datasets</span></code></dt>
 <dd>
-<section class="desc"><p>LOADING DATASETS FROM URL's
-pass a name and url to function: load_dataset(name, url)</p></section>
+<section class="desc"><dl>
+<dt><strong><code>dict</code></strong> :&ensp;<code>Datasets</code> <code>is</code> <code>a</code> <code>dictionary</code> <code>containing</code> <code>all</code> <code>data</code> <code>sets</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
 </dd>
 <dt id="fantasy.path"><code class="name">var <span class="ident">path</span></code></dt>
 <dd>
-<section class="desc"><p>datasets is a dictionary which will keep all
-loaded datasets. datasets ={ 'Fixture': dataset, &hellip;}</p></section>
+<section class="desc"><dl>
+<dt><strong><code>str</code></strong> :&ensp;<code>URL</code> <a title="fantasy.path" href="#fantasy.path"><code>path</code></a></dt>
+<dd>&nbsp;</dd>
+</dl></section>
 </dd>
 </dl>
 </section>
